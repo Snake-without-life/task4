@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 140px;
+			height: 140px;
+			background: url('imgs/run.png');
+			margin: 200px auto;
+			animation: animate 0.01ms steps(13,end) infinite;
+		}
+		@keyframes animate{
+			0%{
+				background-position:0 0;
+			}
+			100%{
+				background-position:-1680px 0;
+			}
+		}
+			/* 0%{
+				background-position: 0 0;
+			}
+			8.333333333333333%{
+				background-position: -100% 0;
+			}
+			16.66666666666667%{
+				background-position: -200% 0;
+			}
+			25%{
+				background-position: -300% 0;
+			}
+			33.33333333333333%{
+				background-position: -400% 0;
+			}
+			41.66666666666667%{
+				background-position: -500% 0;
+			}
+			50%{
+				background-position: -600% 0;
+			}
+			58.33333333333333%{
+				background-position: -700% 0;
+			}
+			66.66666666666666%{
+				background-position: -800% 0;
+			}
+			75%{
+				background-position: -900% 0;
+			}
+			83.33333333333333%{
+				background-position: -1000% 0;
+			}
+			91.66666666666667%{
+				background-position: -1200% 0;
+			}
+			100%{
+				background-position: -1300%0 0;
+			}
+					} */
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+</body>
+</html>
