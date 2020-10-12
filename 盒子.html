@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@keyframes zhuan {
+			0% {
+				transform: rotateX(0deg) rotateY(-50deg) rotateZ(90deg);
+			}
+			100% {
+				transform: rotateX(360deg) rotateY(-50deg) rotateZ(90deg);
+			}
+		}
+		.box{
+			width: 700px;
+			height: 700px;
+			border: 1px solid;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			perspective: 1200px;
+		}
+		.box1{
+			width: 100%;
+			height: 100%;
+			transform-style: preserve-3d;
+			animation: zhuan 1s linear infinite;
+		}
+		.small{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -100px;
+			margin-top: -100px;
+			background: currentColor;
+		}
+		.small1{
+			color: red;
+			transform: translateZ(100px);
+		}
+		.small2{
+			color: blue;
+			transform: rotateY(180deg) translateZ(100px);
+		}
+		.small3{
+			color: green;
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.small4{
+			color: yellow;
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+		.small5{
+			color: black;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.small6{
+			color: purple;
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+		.box:hover .small{
+			box-shadow: 0 0 20PX currentColor;
+		}
+		.big{
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -200px;
+			margin-top: -200px;
+			background: rgba(100,100,100,.2);
+		}
+		.big1{
+			color: red;
+			transform: translateZ(200px);
+		}
+		.big2{
+			color: blue;
+			transform: rotateY(180deg) translateZ(200px);
+		}
+		.big3{
+			color: green;
+			transform: rotateY(90deg) translateZ(200px);
+		}
+		.big4{
+			color: yellow;
+			transform: rotateY(-90deg) translateZ(200px);
+		}
+		.big5{
+			color: #000;
+			transform: rotateX(90deg) translateZ(200px);
+		}
+		.big6{
+			color: purple;
+			transform: rotateX(-90deg) translateZ(200px);
+		}
+		.box:hover .big1{
+			color: red;
+			transform: translateZ(300px);
+		}
+		.box:hover .big2{
+			color: blue;
+			transform: rotateY(180deg) translateZ(300px);
+		}
+		.box:hover .big3{
+			color: green;
+			transform: rotateY(90deg) translateZ(300px);
+		}
+		.box:hover .big4{
+			color: yellow;
+			transform: rotateY(-90deg) translateZ(300px);
+		}
+		.box:hover .big5{
+			color: black;
+			transform: rotateX(90deg) translateZ(300px);
+		}
+		.box:hover .big6{
+			color: purple;
+			transform: rotateX(-90deg) translateZ(300px);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1">
+			<div class="small small1"></div>
+			<div class="small small2"></div>
+			<div class="small small3"></div>
+			<div class="small small4"></div>
+			<div class="small small5"></div>
+			<div class="small small6"></div>
+			<div class="big big1"></div>
+			<div class="big big2"></div>
+			<div class="big big3"></div>
+			<div class="big big4"></div>
+			<div class="big big5"></div>
+			<div class="big big6"></div>
+		</div>
+	</div>
+</body>
+</html>
